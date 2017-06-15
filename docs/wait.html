@@ -39,10 +39,10 @@
     <div id="also_hidden" style="display:block;"></div>
     <div id="fields">
       <form id="myForm">
-        <button id="btn" type="button" onclick="setDisabled('field1', false, 1000)">Click To Enable Field 1!</button>
+        <button id="fieldBtn" type="button" onclick="setDisabled('field1', false, 1000)">Click To Enable Field 1!</button>
         Text Field 1:<br>
         <input type="text" name="one" id="field1" value="field1 value" disabled><br>
-        <button id="btn" type="button" onclick="setTimeoutDisplay('field2', 'block', 1000); setDisabled('field2', false, 1000);">Click To Show and Enable Field 1!</button>
+        <button id="fieldBtn2" type="button" onclick="setTimeoutDisplay('field2', 'block', 1000); setDisabled('field2', false, 1000);">Click To Show and Enable Field 1!</button>
         Text Field 2:<br>
         <input type="text" name="two" id="field2" value="field2 value" style="display:none;" disabled>
       </form>
