@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Child elements</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style>
+    .hoverMe {
+      display: block;
+    }
+
+    .hoverMe:hover+.showMe {
+      display: block;
+    }
+
+    .showMe {
+      display: none;
+    }
+
+    #main_div {
+      padding: 50px;
+      border: 1px solid #4CAF50;
+    }
+  </style>
+</head>
+
+<body>
+  <div href="#" class='hoverMe'>
+    Hover me
+  </div>
+
+  <div class='showMe'>
+    Show me
+  </div>
+  <button id="disabled" disabled>Disabled button</button>
+  <button id="enabled">Enabled button</button>
+  <div id="main_div" , class="div_main">
+    <button id="childDisabled" disabled>Child node: Disabled button</button>
+    <button id="childEnabled">Child node: Enabled button</button>
+    <div href="#" class='hoverMe'>
+      Child node: Hover me
+    </div>
+
+    <div class='showMe'>
+      Child node: Show me
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
